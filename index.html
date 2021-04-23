@@ -25,8 +25,16 @@
 <body>
     <div id="vm" class="container flex">     <!--container / id="vm" - Vue instance-->
         <aside class="side"> <!--side-->
-            <img class="image top rounded scaling" src="./img/avatar_io.jpg" alt="username">
-            <span>Nome Utente</span>
+            <div class="aside-container flex">
+                <img class="image top rounded scaling" src="./img/avatar_io.jpg" alt="username">
+                <span>Nome Utente</span>
+                <div class="filler"></div>
+                <span class="icons-container flex">
+                    <a href="#"><i class="fas fa-circle-notch"></i></a>
+                    <a href="#"><i class="fas fa-comment-alt"></i></a>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </span>
+            </div>
         </aside> <!--side-->
 
         <main class="content flex">

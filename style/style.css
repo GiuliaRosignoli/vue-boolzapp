@@ -1,4 +1,4 @@
-/* General */
+/* General settings */
 
 * {
     margin: 0;
@@ -20,6 +20,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 
@@ -54,14 +59,33 @@ body {
     background-color: #fff;
 }
 
-.side .image {
+.side .aside-container .image {
     padding: 15px;
-    vertical-align: middle;
 }
 
-.side span {
+.side .aside-container span {
     font-weight: bold
 }
+
+.side .aside-container {
+    align-items: center;
+}
+
+.side .aside-container .filler {
+    flex-grow: 1;
+}
+
+/* Aside icons */
+
+.icons-container a {
+    padding: 10px;
+}
+
+.icons-container a i {
+    font-size: 1.3rem;
+    color: #b4b3b3;
+}
+
 
 /* central part - main */
 
