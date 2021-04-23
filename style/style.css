@@ -4,6 +4,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-size: .9rem;
 }
 
 body {
@@ -20,10 +22,19 @@ body {
     align-items: center;
 }
 
-/* Utilities*/
+
+/* Utilities section*/
 
 .flex {
     display: flex;
+}
+
+.rounded {
+    border-radius: 50%;
+}
+
+.scaling {  /* smaller image */
+    width: 70px;
 }
 
 
@@ -36,13 +47,31 @@ body {
     background-color: #fff;
 }
 
+/* left side - aside */
+
 .side {
     flex-basis: 35%;
     background-color: #fff;
 }
 
-.content {
+.side .image {
+    padding: 15px;
+    vertical-align: middle;
+}
+
+.side span {
+    font-weight: bold
+}
+
+/* central part - main */
+
+.content { /* general part that includes header, main, footer*/
     flex-basis: 65%;
     flex-direction: column;
     background-image: url("../img/mine.jpg");
+}
+
+.content-main {  /* central part- the biggest one */
+    flex-grow: 1;
+    overflow-y: auto;
 }
