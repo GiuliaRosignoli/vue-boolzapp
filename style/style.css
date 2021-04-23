@@ -42,6 +42,10 @@ a {
     width: 70px;
 }
 
+.bold {
+    font-weight: bold;
+}
+
 
 /* Layout */
 
@@ -81,11 +85,45 @@ a {
     padding: 10px;
 }
 
+#pad {
+    padding-right: 25px;
+}
+
 .icons-container a i {
     font-size: 1.3rem;
     color: #b4b3b3;
 }
 
+/* Aside - blue bar */
+
+.blue-bar {
+    padding: 8px;
+    background-color: #AFEEEE;
+}
+
+.blue-bar i {
+    padding: 10px;
+    margin-left: 7px;
+    margin-right: 12px;
+    font-size: 1.2rem;
+    align-content: center;
+    background-color: #fff;
+    color: #AFEEEE;
+}
+
+.blue-content {
+    align-self: center
+}
+
+.blue-content .blue-link {
+    padding-top: 2px;
+}
+
+.blue-content .blue-link a {
+    font-size: 0.6rem;
+    color:  #616161;
+    text-decoration: underline;
+}
 
 /* central part - main */
 
