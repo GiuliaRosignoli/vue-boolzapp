@@ -51,12 +51,12 @@
                 </div> <!--/ white section - search bar and profiles -->
 
                <!--Users'profiles -->
-               <div class="usersprofiles flex" v-for="(name, avatar) in yourPropNameHere">
-                   <img class="rounded normalscaling" src="./img/avatar_1.jpg" alt="Michele">
-                   <div class="bold">Michele</div>
+               <div class="usersprofiles flex" v-for="(element, index) in yourPropNameHere"> <!--Loop using v-for-->
+                    <img v-bind:src="'./img/'+ element.avatar" class="normalscaling rounded"/> 
+                   <div class="bold">{{ element.name }}</div>
                 </div> 
         </aside> <!--side-->
-
+        
         <main class="content flex">
             <section class="content-header flex"> <!--1st main section /header -->
                 <img class="scaling rounded" src="./img/avatar_1.jpg" alt="Michele">

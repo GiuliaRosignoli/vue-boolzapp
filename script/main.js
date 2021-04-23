@@ -6,7 +6,7 @@ const vm = new Vue({
     yourPropNameHere: [
         {
             name: 'Michele',
-            avatar: '.img/avatar_1.jpg',
+            avatar: 'avatar_1.jpg',
             visible: true,
             messages: [
                 {
@@ -28,7 +28,7 @@ const vm = new Vue({
         },
         {
             name: 'Fabio',
-            avatar: '.img/avatar_2.jpg',
+            avatar: 'avatar_2.jpg',
             visible: true,
             messages: [
                 {
@@ -50,7 +50,7 @@ const vm = new Vue({
         },
         {
             name: 'Samuele',
-            avatar: '.img/avatar_3.jpg',
+            avatar: 'avatar_3.jpg',
             visible: true,
             messages: [
                 {
@@ -72,7 +72,7 @@ const vm = new Vue({
         },
         {
             name: 'Luisa',
-            avatar: '.img/avatar_4.jpg',
+            avatar: 'avatar_4.jpg',
             visible: true,
             messages: [
                 {
