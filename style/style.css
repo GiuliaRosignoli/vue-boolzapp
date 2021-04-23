@@ -67,6 +67,10 @@ a {
     background-color: #fff;
 }
 
+.side .aside-container {
+    background-color:  #D3D3D3;
+}
+
 .side .aside-container .image {
     padding: 12px;
 }
@@ -116,7 +120,7 @@ a {
 }
 
 .blue-content {
-    align-self: center
+    align-self: center;
 }
 
 .blue-content .blue-link {
@@ -185,3 +189,26 @@ a {
     padding: 10px;
 }
 
+/* content-header */
+
+main {
+    border-left: 1px solid #aaaaaa;
+}
+
+.user {
+    align-self: center;
+}
+
+.content-header {
+    background-color:  #D3D3D3;
+}
+
+.content-header img {
+    padding: 10px;
+}
+
+.content-header .user div {
+    padding-top: 2px;
+    font-size: 0.7rem;
+    color:  #616161;
+}
