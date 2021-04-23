@@ -4,7 +4,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-image: linear-gradient(
+        to bottom,
+        #00bfa5 0%,
+        #00bfa5 16%,
+        #D3D3D3 16%,
+        #D3D3D3 100%
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Utilities*/
@@ -15,3 +28,21 @@
 
 
 /* Layout */
+
+.container {
+    width: 80%;
+    min-width: 900px;
+    height: 95%;
+    background-color: #fff;
+}
+
+.side {
+    flex-basis: 35%;
+    background-color: #fff;
+}
+
+.content {
+    flex-basis: 65%;
+    flex-direction: column;
+    background-image: url("../img/mine.jpg");
+}

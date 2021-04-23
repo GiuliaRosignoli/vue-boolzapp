@@ -1,1 +1,5 @@
-console.log("Vue: ", Vue);
+// console.log("Vue: ", Vue);
+
+const vm = new Vue({
+
+});
