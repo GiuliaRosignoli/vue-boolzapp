@@ -9,6 +9,9 @@
 }
 
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
     background-image: linear-gradient(
         to bottom,
@@ -17,15 +20,13 @@ body {
         #D3D3D3 16%,
         #D3D3D3 100%
     );
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 a {
     text-decoration: none;
     color: inherit;
 }
+
 
 /***********************************************************/
 /* Utilities section*/

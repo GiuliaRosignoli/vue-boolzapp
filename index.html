@@ -52,7 +52,7 @@
 
                <!--Users'profiles -->
                <div class="usersprofiles flex" v-for="(element, index) in yourPropNameHere"> <!--Loop using v-for-->
-                    <img v-bind:src="'./img/avatar'+ element.avatar + '.jpg'" class="normalscaling rounded padd10"/> 
+                    <img v-bind:src="'./img/avatar'+ element.avatar + '.jpg'" class="normalscaling rounded padd10" v-bind:alt="element.name"/> 
                    <div class="bold">{{ element.name }}</div>
                 </div> 
 
