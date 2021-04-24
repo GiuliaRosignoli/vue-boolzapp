@@ -80,8 +80,12 @@ a {
     color: #b4b3b3;
 }
 
+.darkergrey {
+    color: #6e6e6e;
+}
+
 .headcol {
-    background-color:  #e2dfdf;
+    background-color: #e2dfdf;
 }
 
 
@@ -115,7 +119,7 @@ a {
 
 
 .icons-container a i {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 /* Aside - blue bar */
@@ -147,7 +151,9 @@ a {
     text-decoration: underline;
 }
 
-/* central part - main */
+/*********************************************************/
+
+        /* central part - main */
 
 .content { /* general part that includes header, main, footer*/
     flex-basis: 65%;
@@ -170,7 +176,7 @@ a {
 .searchTerm {
     width: 95%;
     height: 27px;
-    border: 3px solid  #e6e9e8;
+    border: 2px solid  #e6e9e8;
     border-right: none;
     margin: 4px 4px;
     margin-right: 0;
@@ -196,9 +202,10 @@ a {
 .usersprofiles {
     align-items: center;
     border-bottom: 1px solid #d2d4d3;
+    cursor: pointer;
 }
 
-/* content-header */
+        /* content-header */
 
 main {
     border-left: 1px solid #aaaaaa;
@@ -216,4 +223,49 @@ main {
 
 .icons-container.two {
    align-self: center;
+}
+
+/* content -main */
+
+.answer {
+    width: 200px;
+    max-width: 100%;
+    height: 40px;
+    max-height: 40px;
+}
+
+.green-chat {  /* class to be used in Vue */
+    background-color: #c3ecc3;
+}
+
+.white-chat {   /* class to be used in Vue */
+    background-color: white;
+}
+
+
+        /* content-footer */
+
+.content-footer input {
+    width: 84%;
+    height: 40px;
+    padding: 28px 40px;
+    border: 1px solid  #e6e9e8;
+    cursor: pointer;
+}
+
+.content-footer input:hover {
+    background-color: white;
+}
+
+.content-footer input:focus {
+    outline: none;
+    border: 1px solid #e6e9e8;
+}
+
+.content-footer i {
+    font-size: 1.3rem;
+}
+
+#extrapad {
+    padding-right: 35px;
 }
