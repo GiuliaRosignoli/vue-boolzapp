@@ -27,7 +27,7 @@ a {
     color: inherit;
 }
 
-
+/***********************************************************/
 /* Utilities section*/
 
 .flex {
@@ -38,17 +38,54 @@ a {
     border-radius: 50%;
 }
 
-.scaling {  /* smaller image */
-    width: 70px;
+.scaling {  /* smaller images */
+    width: 60px;
 }
 
 .normalscaling { /* all images */
-    width: 80px;
+    width: 69px;
 }
 
 .bold {
     font-weight: bold;
 }
+
+.filler {
+    flex-grow: 1;
+}
+
+/*padding */ 
+
+.padd11 {
+    padding: 11px;
+}
+
+.padd10 {
+    padding: 10px;
+}
+
+.paddrgt {
+    padding-right: 25px;
+}
+
+
+/* Utilities section colours */
+
+
+.whitebg {
+    background-color: #fff;
+}
+
+.grey {
+    color: #b4b3b3;
+}
+
+.headcol {
+    background-color:  #e2dfdf;
+}
+
+
+/*********************************************************/  
 
 
 /* Layout */
@@ -57,22 +94,12 @@ a {
     width: 80%;
     min-width: 900px;
     height: 95%;
-    background-color: #fff;
 }
 
 /* left side - aside */
 
 .side {
     flex-basis: 35%;
-    background-color: #fff;
-}
-
-.side .aside-container {
-    background-color:  #D3D3D3;
-}
-
-.side .aside-container .image {
-    padding: 12px;
 }
 
 .side .aside-container span {
@@ -83,23 +110,12 @@ a {
     align-items: center;
 }
 
-.side .aside-container .filler {
-    flex-grow: 1;
-}
 
 /* Aside icons */
 
-.icons-container a {
-    padding: 10px;
-}
-
-#pad {
-    padding-right: 25px;
-}
 
 .icons-container a i {
     font-size: 1.3rem;
-    color: #b4b3b3;
 }
 
 /* Aside - blue bar */
@@ -110,12 +126,10 @@ a {
 }
 
 .blue-bar i {
-    padding: 10px;
     margin-left: 7px;
     margin-right: 12px;
     font-size: 1.2rem;
     align-content: center;
-    background-color: #fff;
     color: #AFEEEE;
 }
 
@@ -171,11 +185,10 @@ a {
     height: 27px;
     margin: 4px 4px;
     margin-left: 0;
-    border: 1px solid #d2d4d3;
+    border: 1px solid #e6e9e8;
     text-align: center;
     cursor: pointer;
     font-size: 0.8rem;
-    color: #d2d4d3;
 }
   
 /* Profiles */
@@ -183,10 +196,6 @@ a {
 .usersprofiles {
     align-items: center;
     border-bottom: 1px solid #d2d4d3;
-}
-
-.usersprofiles img {
-    padding: 10px;
 }
 
 /* content-header */
@@ -199,16 +208,12 @@ main {
     align-self: center;
 }
 
-.content-header {
-    background-color:  #D3D3D3;
-}
-
-.content-header img {
-    padding: 10px;
-}
-
 .content-header .user div {
     padding-top: 2px;
     font-size: 0.7rem;
     color:  #616161;
+}
+
+.icons-container.two {
+   align-self: center;
 }

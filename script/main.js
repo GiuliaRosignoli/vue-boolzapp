@@ -1,12 +1,13 @@
 // console.log("Vue: ", Vue);
 
-const vm = new Vue({
+
+const vm = new Vue({  //Vue instance
     el: "#vm",
     data: {
-    yourPropNameHere: [
+    yourPropNameHere: [   // array of objects
         {
             name: 'Michele',
-            avatar: 'avatar_1.jpg',
+            avatar: '_1',
             visible: true,
             messages: [
                 {
@@ -28,7 +29,7 @@ const vm = new Vue({
         },
         {
             name: 'Fabio',
-            avatar: 'avatar_2.jpg',
+            avatar: '_2',
             visible: true,
             messages: [
                 {
@@ -50,7 +51,7 @@ const vm = new Vue({
         },
         {
             name: 'Samuele',
-            avatar: 'avatar_3.jpg',
+            avatar: '_3',
             visible: true,
             messages: [
                 {
@@ -72,7 +73,7 @@ const vm = new Vue({
         },
         {
             name: 'Luisa',
-            avatar: 'avatar_4.jpg',
+            avatar: '_4',
             visible: true,
             messages: [
                 {
