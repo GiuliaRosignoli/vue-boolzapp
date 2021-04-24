@@ -34,7 +34,7 @@
                     <a href="#"><i class="fas fa-comment-alt grey padd10"></i></a>
                     <a href="#"><i class="fas fa-ellipsis-v grey padd10 paddrgt"></i></a>
                 </span>
-            </div>
+            </div>  
 
             <div class="blue-bar flex"> <!--Blue bar -->
                 <i class="fas fa-bell-slash whitebg rounded padd11"></i>
@@ -56,14 +56,14 @@
                    <div class="bold">{{ element.name }}</div>
                 </div> 
 
-        </aside> <!--side-->
+        </aside> <!--/ side-->
         
         <main class="content flex">
             <section class="content-header headcol flex"> <!--1st main section /header -->
                 <img class="scaling rounded padd10" src="./img/avatar_1.jpg" alt="Michele">
                 <div class="user">
                     <span class="bold">Michele</span>
-                    <div>Ultimo accesso oggi alle 10:35</div>
+                    <div class="bold">Ultimo accesso oggi alle 10:35</div>
                 </div>
                 <div class="filler"></div>
                 <span class="icons-container two">
@@ -74,9 +74,17 @@
                 
             </section>  <!--/1st main section - chat body -->
 
-            <section class="content-main">  <!--2nd main section /main-->
-                <div class="answer green-chat">ciao</div>
-                <div class="answer white-chat">ciao</div>
+            <section class="content-main flex">  <!--2nd main section /main-->
+                <ul class="list flex"> <!--Chats-->
+                    <li class="answer green-chat bold flex">
+                        <div class="first">Messaggio inviato</div>
+                        <div class="second-line darkergrey">10/01/2021 15:50</div>
+                    </li>
+                    <li class="answer white-chat bold flex">
+                        <div class="first">Messaggio ricevuto</div>
+                        <div class="second-line darkergrey">10/01/2021 15:50</div>
+                    </li>
+                </ul> <!--/ ul chats-->
             </section>  <!--/ 2nd main section /main-->
 
                 <!--Footer starts here - chat-->
@@ -88,9 +96,7 @@
 
         </main> <!--main /content-->
 
-    </div>  <!--/ container / id="vm" - Vue instance-->
-
-
+    </div>  <!--/ container / id="vm" - end of Vue instance-->
 
 
 

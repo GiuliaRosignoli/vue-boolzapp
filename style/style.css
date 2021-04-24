@@ -39,11 +39,11 @@ a {
 }
 
 .scaling {  /* smaller images */
-    width: 60px;
+    width: 58px;
 }
 
 .normalscaling { /* all images */
-    width: 69px;
+    width: 68px;
 }
 
 .bold {
@@ -153,7 +153,7 @@ a {
 
 /*********************************************************/
 
-        /* central part - main */
+        /* Central part - main */
 
 .content { /* general part that includes header, main, footer*/
     flex-basis: 65%;
@@ -227,21 +227,50 @@ main {
 
 /* content -main */
 
-.answer {
-    width: 200px;
+.answer { /* general features of the class */
+    flex-direction: column;
+    justify-content: center;
+    width: 250px;
     max-width: 100%;
-    height: 40px;
-    max-height: 40px;
+    height: 45px;
+    max-height: 45px;
+    padding: 10px;
+    border-radius: 8px;
 }
 
-.green-chat {  /* class to be used in Vue */
-    background-color: #c3ecc3;
+.list .answer .first {
+    font-size: 0.8rem;  /* Smaller font used within chats */
+}
+
+.answer .second-line {
+    align-self: flex-end;
+    font-size: 0.4rem;
+}
+
+.green-chat {   /* class to be used in Vue */
+    align-self: flex-end;
+    background-color: #d6f7a6;
 }
 
 .white-chat {   /* class to be used in Vue */
+    align-self: flex-start;
     background-color: white;
 }
 
+.content-main {
+    flex-direction: column;
+}
+
+.content-main .list {
+    flex-direction: column;
+    list-style: none;
+}
+
+.content-main .list li {
+    margin-top: 30px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
 
         /* content-footer */
 
