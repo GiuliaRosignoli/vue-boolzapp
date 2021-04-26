@@ -75,17 +75,18 @@
             </section>  <!--/1st main section - chat body -->
 
             <section class="content-main flex">  <!--2nd main section /main-->
-                <ul class="list flex"> <!--Chats-->
+                <ul class="list flex" v-for="(element, index) in this.contacts[this.userIndex].messages"> <!--Chats-->
                     <li class="answer green-chat bold flex">
-                        <div class="first">inviato</div>
+                        <div class="first">{{ element.messages}}</div>
                         <div class="second-line darkergrey">10/01/2021 15:50</div>
                     </li>
                     <li class="answer white-chat bold flex">
-                        <div class="first">Messaggio ricevuto</div>
+                        <div class="first">{{ element.messages }}</div>
                         <div class="second-line darkergrey">10/01/2021 15:50</div>
                     </li>
                 </ul> <!--/ ul chats-->
-            </section>  <!--/ 2nd main section /main-->
+            </section>  <!--/ 2nd main section /main--> 
+        
 
                 <!--Footer starts here - chat-->
             <section class="content-footer whitebg"> <!--3rd main section /footer-->

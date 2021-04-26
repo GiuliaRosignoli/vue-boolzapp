@@ -98,9 +98,10 @@ const vm = new Vue({  //Vue instance
          // console.log(index);
          // console.log(this.contacts[index]);  can see the entire object and its own properties
           this.userIndex= index;  // userindex = variable I've set above!
-          console.log(this.userIndex); // Clicking 'Luisa' - get 3 (her position index)
+          //console.log(this.userIndex); // Clicking 'Luisa' - get 3 (her position index)
+         console.log("messages", this.contacts[this.userIndex].messages);
         }
     
-    }
+    } 
      
 });
