@@ -100,6 +100,7 @@ const vm = new Vue({  //Vue instance
           this.userIndex= index;  // userindex = variable I've set above!
           //console.log(this.userIndex); // Clicking 'Luisa' - get 3 (her position index)
          console.log("messages", this.contacts[this.userIndex].messages);
+         console.log("date", this.contacts[this.userIndex].date);
         }
     
     } 
