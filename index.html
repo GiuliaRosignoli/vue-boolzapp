@@ -51,18 +51,18 @@
                 </div> <!--/ white section - search bar and profiles -->
 
                <!--Users'profiles -->
-               <div class="usersprofiles flex" v-for="(element, index) in yourPropNameHere"  @click="currentUser"> <!--Loop using v-for-->
+               <div class="usersprofiles flex" v-for="(element, index) in contacts" @click="currentUser(index)"> <!--Loop using v-for-->
                     <img v-bind:src="'./img/avatar'+ element.avatar + '.jpg'" class="normalscaling rounded padd10" v-bind:alt="element.name"/> 
-                   <div class="bold">{{ element.name }}</div>
+                   <div class="bold">{{ element.name }}</div>  
                 </div> 
 
         </aside> <!--/ side-->
         
         <main class="content flex">
             <section class="content-header headcol flex"> <!--1st main section /header -->
-                <img class="scaling rounded padd10" src="./img/avatar_1.jpg" alt="Michele">
+                <img class="scaling rounded padd10" v-bind:src="'./img/avatar'+ contacts[userIndex].avatar + '.jpg'" alt="Michele">
                 <div class="user">
-                    <span class="bold">Michele</span>
+                    <span class="bold">{{ contacts[userIndex].name }}</span> <!--names' dynamic index within the collection(contacts)-->
                     <div class="bold">Ultimo accesso oggi alle 10:35</div>
                 </div>
                 <div class="filler"></div>

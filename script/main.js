@@ -4,7 +4,7 @@
 const vm = new Vue({  //Vue instance
     el: "#vm",
     data: {
-    yourPropNameHere: [   // array of objects
+    contacts: [   // array of objects
         {
             name: 'Michele',
             avatar: '_1',
@@ -89,16 +89,18 @@ const vm = new Vue({  //Vue instance
             ],
         },
     ],
-    userIndex = yourPropNameHere.findIndex,
+    userIndex: 0, //Starting from 0, as it occurs with index
+    
 },
     methods: {
-        currentUser(){
+        currentUser(index){
          // console.log("Clicked here!");
-         console.log(this.usersIndex);
+         // console.log(index);
+         // console.log(this.contacts[index]);  can see the entire object and its own properties
+          this.userIndex= index;  // userindex = variable I've set above!
+          console.log(this.userIndex); // Clicking 'Luisa' - get 3 (her position index)
         }
-        if(currentUser == usersIndex) {
-
-        }
+    
     }
      
 });
