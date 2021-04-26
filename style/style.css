@@ -240,6 +240,7 @@ main {
 }
 
 .list .answer .first {
+    align-items: flex-start;
     font-size: 0.8rem;  /* Smaller font used within chats */
 }
 
@@ -279,17 +280,17 @@ main {
     width: 84%;
     height: 40px;
     padding: 28px 40px;
-    border: 1px solid  #e6e9e8;
+    border: 1px solid  #e0e0e0;
     cursor: pointer;
 }
 
 .content-footer input:hover {
-    background-color: white;
+    background-color: white
 }
 
 .content-footer input:focus {
     outline: none;
-    border: 1px solid #e6e9e8;
+    border: 1px solid white;
 }
 
 .content-footer i {

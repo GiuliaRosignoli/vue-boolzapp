@@ -89,6 +89,16 @@ const vm = new Vue({  //Vue instance
             ],
         },
     ],
+    userIndex = yourPropNameHere.findIndex,
 },
-      
+    methods: {
+        currentUser(){
+         // console.log("Clicked here!");
+         console.log(this.usersIndex);
+        }
+        if(currentUser == usersIndex) {
+
+        }
+    }
+     
 });
