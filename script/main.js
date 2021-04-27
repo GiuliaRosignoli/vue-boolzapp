@@ -1,6 +1,12 @@
 // console.log("Vue: ", Vue);
 
 
+//Plugins
+
+dayjs.extend(dayjs_plugin_customParseFormat);
+
+
+
 const vm = new Vue({  //Vue instance
     el: "#vm",
     data: {
@@ -92,6 +98,7 @@ const vm = new Vue({  //Vue instance
     userIndex: 0, //Starting from 0, as it occurs with index
     userMessage:"",
     
+    
 },
     methods: {
         currentUser(index){
@@ -126,6 +133,8 @@ const vm = new Vue({  //Vue instance
             });
             
         },
+
+        
     } 
      
 });
