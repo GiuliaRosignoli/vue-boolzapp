@@ -90,6 +90,7 @@ const vm = new Vue({  //Vue instance
         },
     ],
     userIndex: 0, //Starting from 0, as it occurs with index
+    userMessage:"",
     
 },
     methods: {
@@ -101,6 +102,16 @@ const vm = new Vue({  //Vue instance
           //console.log(this.userIndex); // Clicking 'Luisa' - get 3 (her position index)
          console.log("messages", this.contacts[this.userIndex].messages);
          console.log("date", this.contacts[this.userIndex].date);
+        },
+
+        addConv(){
+            console.log("New chat to be added here!");
+            if(this.userMessage !== "") {
+                this.contacts[this.userIndex].messages.push({
+                    message: this.userMessage,
+                });
+            }
+
         }
     
     } 

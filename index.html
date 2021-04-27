@@ -92,7 +92,11 @@
                 <!--Footer starts here - chat-->
             <section class="content-footer whitebg"> <!--3rd main section /footer-->
                 <span><i class="far fa-smile darkergrey padd10"></i></span>
-                <input type="text" placeholder="Scrivi un messaggio">
+                <input type="text" 
+                v-model.trim="userMessage" 
+                placeholder="Scrivi un messaggio"
+                @keyup.enter="addConv"
+                >
                 <span><i id="extrapad" class="fas fa-microphone darkergrey padd10"></i></span>
             </section>  <!--/ 3rd main section /footer-->
 
