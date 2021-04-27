@@ -206,6 +206,11 @@ a {
     cursor: pointer;
 }
 
+.usersprofiles:active {
+    background-color: grey;
+}
+
+
         /* content-header */
 
 main {
