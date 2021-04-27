@@ -108,24 +108,24 @@ const vm = new Vue({  //Vue instance
           //  console.log("New chat to be added here!");
             if(this.userMessage !== "") {
                 this.contacts[this.userIndex].messages.push({
-                    date: '10/01/2020 15:50:00',
+                    date: dayjs(new Date()),
                     message: this.userMessage,
                     status: 'sent',
-                });
-            /*    setTimeout(addAnswer, 1000), */
+                });  
+                this.userMessage="";
+               setTimeout(this.addAnswer, 1000);
             }
-        
 
-          /*  function addAnswer(){
+        },
+       
+        addAnswer(){
             this.contacts[this.userIndex].messages.push({
-                date: '10/01/2020 15:50:00',
+                date: dayjs(new Date()),
                 message: 'Ok',
                 status: 'received',
             });
             
-        },*/
         },
-       
     } 
      
 });
