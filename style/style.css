@@ -204,10 +204,12 @@ a {
     align-items: center;
     border-bottom: 1px solid #d2d4d3;
     cursor: pointer;
+    transition: background-color 1s;
 }
 
-.usersprofiles:active {
-    background-color: grey;
+
+.usersprofiles:hover, .usersprofiles:active {
+    background-color: rgb(150, 149, 149);
 }
 
 
@@ -251,6 +253,7 @@ main {
 
 .answer .second-line {
     align-self: flex-end;
+    padding-top: 7px;
     font-size: 0.4rem;
 }
 
