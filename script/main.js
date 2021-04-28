@@ -135,9 +135,9 @@ const vm = new Vue({  //Vue instance
         },
 
         userResearch() {
-            console.log("text inserted");
+        //    console.log("text inserted");
             this.contacts.forEach((element)=>{
-                if(element.name.includes(this.searchBar)) {
+                if(element.name.toLowerCase().includes(this.searchBar)) {
                     element.visible = true;
                 } else {
                     element.visible = false;
@@ -146,6 +146,7 @@ const vm = new Vue({  //Vue instance
             
         },
 
+    
         
     } 
      
