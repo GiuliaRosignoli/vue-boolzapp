@@ -106,16 +106,16 @@ const vm = new Vue({  //Vue instance
          // console.log(index);
          // console.log(this.contacts[index]);  can see the entire object and its own properties
           this.userIndex= index;  // userindex = variable I've set above!
-          //console.log(this.userIndex); // Clicking 'Luisa' - get 3 (her position index)
-         console.log("messages", this.contacts[this.userIndex].messages);
-         console.log("date", this.contacts[this.userIndex].date);
+         // console.log(this.userIndex); // Clicking 'Luisa' - get 3 (her position index)
+         // console.log("messages", this.contacts[this.userIndex].messages);
+         // console.log("date", this.contacts[this.userIndex].date);
         },
 
         addConv(){
           //  console.log("New chat to be added here!");
             if(this.userMessage !== "") {
                 this.contacts[this.userIndex].messages.push({
-                    date: dayjs(new Date()),
+                    date: dayjs().format('DD/MM/YYYY HH:mm:SS'),
                     message: this.userMessage,
                     status: 'sent',
                 });  
@@ -127,7 +127,7 @@ const vm = new Vue({  //Vue instance
        
         addAnswer(){
             this.contacts[this.userIndex].messages.push({
-                date: dayjs(new Date()),
+                date: dayjs().format('DD/MM/YYYY HH:mm:SS'),
                 message: 'Ok',
                 status: 'received',
             });
