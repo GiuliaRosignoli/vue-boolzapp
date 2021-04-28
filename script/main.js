@@ -97,7 +97,7 @@ const vm = new Vue({  //Vue instance
     ],
     userIndex: 0, //Starting from 0, as it occurs with index
     userMessage:"",
-    
+    searchBar:"",
     
 },
     methods: {
@@ -131,6 +131,11 @@ const vm = new Vue({  //Vue instance
                 message: 'Ok',
                 status: 'received',
             });
+            
+        },
+
+        userResearch () {
+            console.log("text inserted", this.userResearch);
             
         },
 

@@ -46,7 +46,12 @@
 
             <div class="aside-body"> <!--white section - search bar and profiles -->
                 <div class="search">
-                    <input type="text" class="searchTerm" placeholder="Cerca o inizia una nuova chat">
+                    <input type="text" 
+                    class="searchTerm" 
+                    placeholder="Cerca o inizia una nuova chat"
+                    v-model.trim ="searchBar"
+                    @keyup = "userResearch"
+                    >
                     <button type="submit" class="searchButton grey"><i class="fa fa-search"></i></button>
                 </div> <!--/ white section - search bar and profiles -->
 
