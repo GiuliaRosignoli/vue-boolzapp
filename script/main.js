@@ -136,7 +136,9 @@ const vm = new Vue({  //Vue instance
 
         userResearch () {
             console.log("text inserted", this.userResearch);
-            
+            if(this.contact.name.includes(this.searchBar)) {
+
+            }
         },
 
         
