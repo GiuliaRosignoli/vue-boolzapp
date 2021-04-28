@@ -49,14 +49,19 @@
                     <input type="text" 
                     class="searchTerm" 
                     placeholder="Cerca o inizia una nuova chat"
-                    v-model.trim ="searchBar"
+                    v-model.trim.toLowerCase ="searchBar"
                     @keyup = "userResearch"
                     >
                     <button type="submit" class="searchButton grey"><i class="fa fa-search"></i></button>
                 </div> <!--/ white section - search bar and profiles -->
 
                <!--Users'profiles -->
-               <div class="usersprofiles flex" v-for="(element, index) in contacts" class="{active: index === userIndex}" @click="currentUser(index)"> <!--Loop using v-for-->
+               <div class="usersprofiles flex" 
+               v-for="(element, index) in contacts" 
+               class="{active: index === userIndex}" 
+               @click="currentUser(index)"
+               v-show="element.visible"
+               > <!--Loop using v-for-->
                     <img v-bind:src="'./img/avatar'+ element.avatar + '.jpg'" class="normalscaling rounded padd10" v-bind:alt="element.name"/> 
                    <div class="bold">{{ element.name }}</div>  
                 </div> 

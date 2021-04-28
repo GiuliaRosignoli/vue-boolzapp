@@ -134,11 +134,16 @@ const vm = new Vue({  //Vue instance
             
         },
 
-        userResearch () {
-            console.log("text inserted", this.userResearch);
-            if(this.contact.name.includes(this.searchBar)) {
-
-            }
+        userResearch() {
+            console.log("text inserted");
+            this.contacts.forEach((element)=>{
+                if(element.name.includes(this.searchBar)) {
+                    element.visible = true;
+                } else {
+                    element.visible = false;
+                }
+            });
+            
         },
 
         
